@@ -1,0 +1,42 @@
+# ==============================================================================
+# .gitignore - Pipeline ETL Indicadores Educacionais (INEP / MEC)
+# ==============================================================================
+
+# Ambientes virtuais Python
+venv/
+.venv/
+env/
+.env
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dados brutos volumosos (manter apenas na camada Prata)
+data/raw/*.csv
+data/raw/*.xlsx
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Distribuição
+dist/
+build/
+*.egg-info/

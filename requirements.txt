@@ -1,21 +1,33 @@
 # ==============================================================================
-# DEPENDÊNCIAS PARA ANÁLISE EXPLORATÓRIA DE DADOS (INEP / MEC)
-# Ambiente recomendado: Python 3.10, 3.11 ou 3.12 (64-bit)
+# DEPENDÊNCIAS DO PIPELINE DE ENGENHARIA DE DADOS (ARQUITETURA MEDALHÃO)
+# Projeto: Indicadores Educacionais por Região (INEP / MEC)
+# Ambiente Recomendado: Python 3.10, 3.11 ou 3.12 (64-bit)
 # ==============================================================================
 
-# Manipulação e Estruturas de Dados
+# 1. Manipulação, Higienização e Estruturação de Dados (Bronze / Prata)
 pandas>=2.0.0
 numpy>=1.24.0
 
-# Visualização de Dados Interativa e Científica
+# 2. Armazenamento Colunar de Alta Performance (Prata)
+pyarrow>=14.0.0
+fastparquet>=2023.10.0
+
+# 3. Modelagem Relacional e Carga no Banco de Dados (Ouro / MySQL)
+sqlalchemy>=2.0.0
+mysql-connector-python>=8.0.0
+
+# 4. Gerenciamento Seguro de Credenciais e Variáveis de Ambiente
+python-dotenv>=1.0.0
+
+# 5. Análise Exploratória de Dados (EDA) e Visualização Estatística
 plotly>=5.18.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
-# Ambiente Interativo de Notebooks
+# 6. Suporte para Notebooks Interativos (Jupyter)
 jupyter>=1.0.0
 ipykernel>=6.20.0
 nbformat>=5.9.0
 
-# Servidor Local e Utilitários
+# 7. Utilitários
 python-dateutil>=2.8.2
